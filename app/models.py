@@ -15,7 +15,6 @@ def fetch_all_tools():
     finally:
         cursor.close()
 
-
 def fetch_tools_by_code(code):
     cursor = mysql.connection.cursor()
     try:
@@ -55,3 +54,4 @@ def fetch_all_usuario():
         return []
     finally:
         cursor.close()
+

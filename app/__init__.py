@@ -7,4 +7,6 @@ app.config.from_object(Config)
 
 mysql = MySQL(app)
 
-from .routes import *
+from .routes import init_routes
+init_routes(app)
+
